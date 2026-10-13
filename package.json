@@ -1,0 +1,25 @@
+{
+  "name": "kpss-kadro-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kamu personel alım ilanlarını tarayıp profile uygun kadroları Telegram'dan bildiren bot",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "tara": "tsx src/scripts/tara.ts",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.27.0",
+    "cheerio": "^1.2.0",
+    "dotenv": "^18.0.6",
+    "grammy": "^1.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
